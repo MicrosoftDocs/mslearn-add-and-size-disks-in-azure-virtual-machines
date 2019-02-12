@@ -12,10 +12,6 @@ resizepart
 quit
 EOF
 
-# The partition tool automatically remounts the drive. 
-# Unmount it again so we can format it.
-sudo umount /dev/sdc1
-
 # Verify partition consistency.
 sudo e2fsck -f /dev/sdc1
 
