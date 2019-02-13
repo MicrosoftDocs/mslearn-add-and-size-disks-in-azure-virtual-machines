@@ -17,7 +17,7 @@ EOF
 sudo umount /dev/sdc1
 
 # Verify partition consistency.
-sudo e2fsck -f /dev/sdc1
+sudo e2fsck -f -p /dev/sdc1
 
 # Resize the filesystem.
 sudo resize2fs /dev/sdc1
